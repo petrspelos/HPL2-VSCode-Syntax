@@ -3,7 +3,7 @@
     "displayName": "Amnesia (HPL2) Engine Function Signatures Snippets",
     "publisher": "Spelos",
     "description": "Amnesia: The Dark Descent script function signatures auto-complete.",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "icon": "images/icon.png",
     "engines": { "vscode": "0.10.x" },
     "galleryBanner": {
