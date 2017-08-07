@@ -1,0 +1,1841 @@
+{
+	"OnStart":{  
+      "prefix":"OnStart(){ }",
+      "body":[  
+		 "OnStart()",
+		 "{",
+		 "\t$0",
+		 "}"
+      ],
+      "description":"This function executes when the map is loaded for the first time."
+   },
+   "OnEnter":{  
+      "prefix":"OnEnter(){ }",
+      "body":[  
+		 "OnEnter()",
+		 "{",
+		 "\t$0",
+		 "}"
+      ],
+      "description":"This function executes every time the player enters a map."
+   },
+   "OnLeave":{  
+      "prefix":"OnLeave(){ }",
+      "body":[  
+		 "OnLeave()",
+		 "{",
+		 "\t$0",
+		 "}"
+      ],
+      "description":"This function executes every time the player leaves a map."
+   },
+   "OnGameStart":{  
+      "prefix":"OnGameStart(){ }",
+      "body":[  
+		 "OnGameStart()",
+		 "{",
+		 "\t$0",
+		 "}"
+      ],
+      "description":"This function is found in the global.hps file and the inventory.hps file, and is run when the game is first started by the player (ie via 'Start New Game')."
+   },
+   "RandFloat":{  
+      "prefix":"RandFloat(float min, float max);",
+      "body":[  
+         "RandFloat(${1:float_min}, ${2:float_max});"
+      ],
+      "description":"Generates a random float number within a range. Inclusive towards maximum."
+   },
+   "RandInt":{  
+      "prefix":"RandInt(int min, int max);",
+      "body":[  
+         "RandInt(${1:int_min}, ${2:int_max});"
+      ],
+      "description":"Generates a random integer within a range. Inclusive towards maximum."
+   },
+   "StringContains":{  
+      "prefix":"StringContains(string hayStack, string needle);",
+      "body":[  
+         "StringContains(\"${1:hayStack}\", \"${2:needle}\");"
+      ],
+      "description":"Returns bool whether the hayStack string contains the needle string."
+   },
+   "StringSub":{  
+      "prefix":"StringSub(string& asString, int alStart, int alCount);",
+      "body":[  
+         "StringSub(\"${1:asString}\", ${2:int_alStar}, ${3:int_alCoun});"
+      ],
+      "description":""
+   },
+   "StringToInt":{  
+      "prefix":"StringToInt(string&in asString);",
+      "body":[  
+         "StringToInt(\"${1:asString}\");"
+      ],
+      "description":""
+   },
+   "StringToFloat":{  
+      "prefix":"StringToFloat(string&in asString);",
+      "body":[  
+         "StringToFloat(\"${1:asString}\");"
+      ],
+      "description":""
+   },
+   "StringToBool":{  
+      "prefix":"StringToBool(string&in asString);",
+      "body":[  
+         "StringToBool(\"${1:asString}\");"
+      ],
+      "description":""
+   },
+   "MathSin":{  
+      "prefix":"MathSin(float afX);",
+      "body":[  
+         "MathSin(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathCos":{  
+      "prefix":"MathCos(float afX);",
+      "body":[  
+         "MathCos(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathTan":{  
+      "prefix":"MathTan(float afX);",
+      "body":[  
+         "MathTan(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathAsin":{  
+      "prefix":"MathAsin(float afX);",
+      "body":[  
+         "MathAsin(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathAcos":{  
+      "prefix":"MathAcos(float afX);",
+      "body":[  
+         "MathAcos(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathAtan":{  
+      "prefix":"MathAtan(float afX);",
+      "body":[  
+         "MathAtan(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathAtan2":{  
+      "prefix":"MathAtan2(float afX, float afY);",
+      "body":[  
+         "MathAtan2(${1:float_afX}, ${2:float_af});"
+      ],
+      "description":""
+   },
+   "MathSqrt":{  
+      "prefix":"MathSqrt(float afX);",
+      "body":[  
+         "MathSqrt(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "MathPow":{  
+      "prefix":"MathPow(float afBase, float afExp);",
+      "body":[  
+         "MathPow(${1:float_afBase}, ${2:float_afEx});"
+      ],
+      "description":""
+   },
+   "MathMin":{  
+      "prefix":"MathMin(float afA, float afB);",
+      "body":[  
+         "MathMin(${1:float_afA}, ${2:float_af});"
+      ],
+      "description":""
+   },
+   "MathMax":{  
+      "prefix":"MathMax(float afA, float afB);",
+      "body":[  
+         "MathMax(${1:float_afA}, ${2:float_af});"
+      ],
+      "description":""
+   },
+   "MathClamp":{  
+      "prefix":"MathClamp(float afX, float afMin, float afMax);",
+      "body":[  
+         "MathClamp(${1:float_afX}, ${2:float_afMi}, ${3:float_afMa});"
+      ],
+      "description":""
+   },
+   "MathAbs":{  
+      "prefix":"MathAbs(float afX);",
+      "body":[  
+         "MathAbs(${1:float_afX});"
+      ],
+      "description":""
+   },
+   "Print ":{  
+      "prefix":"Print (string& asString);",
+      "body":[  
+         "Print (\"${1:asString}\");"
+      ],
+      "description":""
+   },
+   "AddDebugMessage":{  
+      "prefix":"AddDebugMessage(string& asString, bool abCheckForDuplicates);",
+      "body":[  
+         "AddDebugMessage(\"${1:asString}\", ${2:bool_abCheckForDuplicate});"
+      ],
+      "description":""
+   },
+   "ProgLog":{  
+      "prefix":"ProgLog(string& asLevel, string& asMessage);",
+      "body":[  
+         "ProgLog(\"${1:asLevel}\", \"${2:asMessage}\");"
+      ],
+      "description":""
+   },
+   "ScriptDebugOn":{  
+      "prefix":"ScriptDebugOn();",
+      "body":[  
+         "ScriptDebugOn();"
+      ],
+      "description":""
+   },
+   "SetLocalVarInt":{  
+      "prefix":"SetLocalVarInt(string& asName, int alVal);",
+      "body":[  
+         "SetLocalVarInt(\"${1:asName}\", ${2:int_alVa});"
+      ],
+      "description":""
+   },
+   "AddLocalVarInt":{  
+      "prefix":"AddLocalVarInt(string& asName, int alVal);",
+      "body":[  
+         "AddLocalVarInt(\"${1:asName}\", ${2:int_alVa});"
+      ],
+      "description":""
+   },
+   "GetLocalVarInt":{  
+      "prefix":"GetLocalVarInt(string& asName);",
+      "body":[  
+         "GetLocalVarInt(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetLocalVarFloat":{  
+      "prefix":"SetLocalVarFloat(string& asName, float afVal);",
+      "body":[  
+         "SetLocalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+      ],
+      "description":""
+   },
+   "AddLocalVarFloat":{  
+      "prefix":"AddLocalVarFloat(string& asName, float afVal);",
+      "body":[  
+         "AddLocalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+      ],
+      "description":""
+   },
+   "GetLocalVarFloat":{  
+      "prefix":"GetLocalVarFloat(string& asName);",
+      "body":[  
+         "GetLocalVarFloat(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetLocalVarString":{  
+      "prefix":"SetLocalVarString(string& asName, const string& asVal);",
+      "body":[  
+         "SetLocalVarString(\"${1:asName}\", \"${2:asVa}\");"
+      ],
+      "description":""
+   },
+   "AddLocalVarString":{  
+      "prefix":"AddLocalVarString(string& asName, string& asVal);",
+      "body":[  
+         "AddLocalVarString(\"${1:asName}\", \"${2:asVa}\");"
+      ],
+      "description":""
+   },
+   "GetLocalVarString":{  
+      "prefix":"GetLocalVarString(string& asName);",
+      "body":[  
+         "GetLocalVarString(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetGlobalVarInt":{  
+      "prefix":"SetGlobalVarInt(string& asName, int alVal);",
+      "body":[  
+         "SetGlobalVarInt(\"${1:asName}\", ${2:int_alVa});"
+      ],
+      "description":""
+   },
+   "AddGlobalVarInt":{  
+      "prefix":"AddGlobalVarInt(string& asName, int alVal);",
+      "body":[  
+         "AddGlobalVarInt(\"${1:asName}\", ${2:int_alVa});"
+      ],
+      "description":""
+   },
+   "GetGlobalVarInt":{  
+      "prefix":"GetGlobalVarInt(string& asName);",
+      "body":[  
+         "GetGlobalVarInt(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetGlobalVarFloat":{  
+      "prefix":"SetGlobalVarFloat(string& asName, float afVal);",
+      "body":[  
+         "SetGlobalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+      ],
+      "description":""
+   },
+   "AddGlobalVarFloat":{  
+      "prefix":"AddGlobalVarFloat(string& asName, float afVal);",
+      "body":[  
+         "AddGlobalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+      ],
+      "description":""
+   },
+   "GetGlobalVarFloat":{  
+      "prefix":"GetGlobalVarFloat(string& asName);",
+      "body":[  
+         "GetGlobalVarFloat(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetGlobalVarString":{  
+      "prefix":"SetGlobalVarString(string& asName, const string& asVal);",
+      "body":[  
+         "SetGlobalVarString(\"${1:asName}\", \"${2:asVa}\");"
+      ],
+      "description":""
+   },
+   "AddGlobalVarString":{  
+      "prefix":"AddGlobalVarString(string& asName, string& asVal);",
+      "body":[  
+         "AddGlobalVarString(\"${1:asName}\", \"${2:asVa}\");"
+      ],
+      "description":""
+   },
+   "GetGlobalVarString":{  
+      "prefix":"GetGlobalVarString(string& asName);",
+      "body":[  
+         "GetGlobalVarString(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "PreloadParticleSystem":{  
+      "prefix":"PreloadParticleSystem(string& asPSFile);",
+      "body":[  
+         "PreloadParticleSystem(\"${1:asPSFile}\");"
+      ],
+      "description":""
+   },
+   "CreateParticleSystemAtEntity":{  
+      "prefix":"CreateParticleSystemAtEntity(string& asPSName, string& asPSFile, string& asEntity, bool abSavePS);",
+      "body":[  
+         "CreateParticleSystemAtEntity(\"${1:asPSName}\", \"${2:asPSFil}\", \"${3:asEntity}\", ${4:bool_abSaveP});"
+      ],
+      "description":""
+   },
+   "CreateParticleSystemAtEntityExt":{  
+      "prefix":"CreateParticleSystemAtEntityExt(string& asPSName, string& asPSFile, string& asEntity, bool abSavePS,float afR, float afG, float afB, float afA, bool abFadeAtDistance, float afFadeMinEnd, float afFadeMinStart,float afFadeMaxStart, float afFadeMaxEnd);",
+      "body":[  
+         "CreateParticleSystemAtEntityExt(\"${1:asPSName}\", \"${2:asPSFil}\", \"${3:asEntity}\", ${4:bool_abSaveP}, ${5:float_afR}, ${6:float_afG}, ${7:float_afB}, ${8:float_afA}, ${9:bool_abFadeAtDistance}, ${10:float_afFadeMinEnd}, ${11:float_afFadeMinStart}, ${12:float_afFadeMaxStart}, ${13:float_afFadeMaxEnd});"
+      ],
+      "description":""
+   },
+   "DestroyParticleSystem":{  
+      "prefix":"DestroyParticleSystem(string& asName);",
+      "body":[  
+         "DestroyParticleSystem(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "PreloadSound":{  
+      "prefix":"PreloadSound(string& asSoundFile);",
+      "body":[  
+         "PreloadSound(\"${1:asSoundFile}\");"
+      ],
+      "description":""
+   },
+   "PlaySoundAtEntity":{  
+      "prefix":"PlaySoundAtEntity(string& asSoundName, string& asSoundFile, string& asEntity, float afFadeTime, bool abSaveSound);",
+      "body":[  
+         "PlaySoundAtEntity(\"${1:asSoundName}\", \"${2:asSoundFile}\", \"${3:asEntity}\", ${4:float_afFadeTim}, ${5:bool_abSaveSoun});"
+      ],
+      "description":""
+   },
+   "FadeInSound":{  
+      "prefix":"FadeInSound(string& asSoundName, float afFadeTime, bool abPlayStart);",
+      "body":[  
+         "FadeInSound(\"${1:asSoundName}\", ${2:float_afFadeTime}, ${3:bool_abPlayStart});"
+      ],
+      "description":""
+   },
+   "StopSound":{  
+      "prefix":"StopSound(string& asSoundName, float afFadeTime);",
+      "body":[  
+         "StopSound(\"${1:asSoundName}\", ${2:float_afFadeTime});"
+      ],
+      "description":""
+   },
+   "PlayMusic":{  
+      "prefix":"PlayMusic(string& asMusicFile, bool abLoop, float afVolume, float afFadeTime, int alPrio, bool abResume);",
+      "body":[  
+         "PlayMusic(\"${1:asMusicFile}\", ${2:bool_abLoop}, ${3:float_afVolume}, ${4:float_afFadeTime}, ${5:int_alPrio}, ${6:bool_abResume});"
+      ],
+      "description":""
+   },
+   "StopMusic":{  
+      "prefix":"StopMusic(float afFadeTime, int alPrio);",
+      "body":[  
+         "StopMusic(${1:float_afFadeTime}, ${2:int_alPri});"
+      ],
+      "description":""
+   },
+   "FadeGlobalSoundVolume":{  
+      "prefix":"FadeGlobalSoundVolume(float afDestVolume, float afTime);",
+      "body":[  
+         "FadeGlobalSoundVolume(${1:float_afDestVolume}, ${2:float_afTim});"
+      ],
+      "description":""
+   },
+   "FadeGlobalSoundSpeed":{  
+      "prefix":"FadeGlobalSoundSpeed(float afDestSpeed, float afTime);",
+      "body":[  
+         "FadeGlobalSoundSpeed(${1:float_afDestSpeed}, ${2:float_afTim});"
+      ],
+      "description":""
+   },
+   "SetLightVisible":{  
+      "prefix":"SetLightVisible(string& asLightName, bool abVisible);",
+      "body":[  
+         "SetLightVisible(\"${1:asLightName}\", ${2:bool_abVisible});"
+      ],
+      "description":""
+   },
+   "FadeLightTo":{  
+      "prefix":"FadeLightTo(string& asLightName, float afR, float afG, float afB, float afA, float afRadius, float afTime);",
+      "body":[  
+         "FadeLightTo(\"${1:asLightName}\", ${2:float_afR}, ${3:float_afG}, ${4:float_afB}, ${5:float_afA}, ${6:float_afRadius}, ${7:float_afTime});"
+      ],
+      "description":""
+   },
+   "SetLightFlickerActive":{  
+      "prefix":"SetLightFlickerActive(string& asLightName, bool abActive);",
+      "body":[  
+         "SetLightFlickerActive(\"${1:asLightName}\", ${2:bool_abActive});"
+      ],
+      "description":""
+   },
+   "StartCredits":{  
+      "prefix":"StartCredits(string& asMusic, bool abLoopMusic, string& asTextCat, string& asTextEntry, int alEndNum);",
+      "body":[  
+         "StartCredits(\"${1:asMusic}\", ${2:bool_abLoopMusic}, \"${3:asTextCat}\", \"${4:asTextEntry}\", ${5:int_alEndNum});"
+      ],
+      "description":""
+   },
+   "StartDemoEnd":{  
+      "prefix":"StartDemoEnd();",
+      "body":[  
+         "StartDemoEnd();"
+      ],
+      "description":""
+   },
+   "AutoSave":{  
+      "prefix":"AutoSave();",
+      "body":[  
+         "AutoSave();"
+      ],
+      "description":""
+   },
+   "CheckPoint ":{  
+      "prefix":"CheckPoint (string& asName, string& asStartPos, string& asCallback, string& asDeathHintCat, string& asDeathHintEntry);",
+      "body":[  
+         "CheckPoint (\"${1:asName}\", \"${2:asStartPos}\", \"${3:asCallback}\", \"${4:asDeathHintCat}\", \"${5:asDeathHintEntry}\");"
+      ],
+      "description":""
+   },
+   "ChangeMap":{  
+      "prefix":"ChangeMap(string& asMapName, string& asStartPos, string& asStartSound, string& asEndSound);",
+      "body":[  
+         "ChangeMap(\"${1:asMapName}\", \"${2:asStartPos}\", \"${3:asStartSound}\", \"${4:asEndSound}\");"
+      ],
+      "description":""
+   },
+   "ClearSavedMaps":{  
+      "prefix":"ClearSavedMaps();",
+      "body":[  
+         "ClearSavedMaps();"
+      ],
+      "description":""
+   },
+   "CreateDataCache":{  
+      "prefix":"CreateDataCache();",
+      "body":[  
+         "CreateDataCache();"
+      ],
+      "description":""
+   },
+   "DestroyDataCache":{  
+      "prefix":"DestroyDataCache();",
+      "body":[  
+         "DestroyDataCache();"
+      ],
+      "description":""
+   },
+   "SetMapDisplayNameEntry":{  
+      "prefix":"SetMapDisplayNameEntry(string& asNameEntry);",
+      "body":[  
+         "SetMapDisplayNameEntry(\"${1:asNameEntry}\");"
+      ],
+      "description":""
+   },
+   "SetSkyBoxActive":{  
+      "prefix":"SetSkyBoxActive(bool abActive);",
+      "body":[  
+         "SetSkyBoxActive(${1:bool_abActive});"
+      ],
+      "description":""
+   },
+   "SetSkyBoxTexture":{  
+      "prefix":"SetSkyBoxTexture(string& asTexture);",
+      "body":[  
+         "SetSkyBoxTexture(\"${1:asTexture}\");"
+      ],
+      "description":""
+   },
+   "SetSkyBoxColor":{  
+      "prefix":"SetSkyBoxColor(float afR, float afG, float afB, float afA);",
+      "body":[  
+         "SetSkyBoxColor(${1:float_afR}, ${2:float_af}, ${3:float_af}, ${4:float_af});"
+      ],
+      "description":""
+   },
+   "SetFogActive":{  
+      "prefix":"SetFogActive(bool abActive);",
+      "body":[  
+         "SetFogActive(${1:bool_abActive});"
+      ],
+      "description":""
+   },
+   "SetFogColor":{  
+      "prefix":"SetFogColor(float afR, float afG, float afB, float afA);",
+      "body":[  
+         "SetFogColor(${1:float_afR}, ${2:float_af}, ${3:float_af}, ${4:float_af});"
+      ],
+      "description":""
+   },
+   "SetFogProperties":{  
+      "prefix":"SetFogProperties(float afStart, float afEnd, float afFalloffExp, bool abCulling);",
+      "body":[  
+         "SetFogProperties(${1:float_afStart}, ${2:float_afEn}, ${3:float_afFalloffEx}, ${4:bool_abCullin});"
+      ],
+      "description":""
+   },
+   "SetupLoadScreen":{  
+      "prefix":"SetupLoadScreen(string&asTextCat, string&asTextEntry, int alRandomNum, string&asImageFile);",
+      "body":[  
+         "SetupLoadScreen(\"${1:TextCat}\", \"${2:TextEntr}\", ${3:int_alRandomNu}, \"${4:ImageFil}\");"
+      ],
+      "description":""
+   },
+   "AddTimer":{  
+      "prefix":"AddTimer(string& asName, float afTime, string& asFunction);",
+      "body":[  
+         "AddTimer(\"${1:asName}\", ${2:float_afTime}, \"${3:asFunction}\");"
+      ],
+      "description":""
+   },
+   "RemoveTimer":{  
+      "prefix":"RemoveTimer(string& asName);",
+      "body":[  
+         "RemoveTimer(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "GetTimerTimeLeft":{  
+      "prefix":"GetTimerTimeLeft(string& asName);",
+      "body":[  
+         "GetTimerTimeLeft(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "FadeOut":{  
+      "prefix":"FadeOut(float afTime);",
+      "body":[  
+         "FadeOut(${1:float_afTime});"
+      ],
+      "description":""
+   },
+   "FadeIn":{  
+      "prefix":"FadeIn(float afTime);",
+      "body":[  
+         "FadeIn(${1:float_afTime});"
+      ],
+      "description":""
+   },
+   "FadeImageTrailTo":{  
+      "prefix":"FadeImageTrailTo(float afAmount, float afSpeed);",
+      "body":[  
+         "FadeImageTrailTo(${1:float_afAmount}, ${2:float_afSpee});"
+      ],
+      "description":""
+   },
+   "FadeSepiaColorTo":{  
+      "prefix":"FadeSepiaColorTo(float afAmount, float afSpeed);",
+      "body":[  
+         "FadeSepiaColorTo(${1:float_afAmount}, ${2:float_afSpee});"
+      ],
+      "description":""
+   },
+   "FadeRadialBlurTo":{  
+      "prefix":"FadeRadialBlurTo(float afSize, float afSpeed);",
+      "body":[  
+         "FadeRadialBlurTo(${1:float_afSize}, ${2:float_afSpee});"
+      ],
+      "description":""
+   },
+   "SetRadialBlurStartDist":{  
+      "prefix":"SetRadialBlurStartDist(float afStartDist);",
+      "body":[  
+         "SetRadialBlurStartDist(${1:float_afStartDist});"
+      ],
+      "description":""
+   },
+   "StartEffectFlash":{  
+      "prefix":"StartEffectFlash(float afFadeIn, float afWhite, float afFadeOut);",
+      "body":[  
+         "StartEffectFlash(${1:float_afFadeIn}, ${2:float_afWhit}, ${3:float_afFadeOu});"
+      ],
+      "description":""
+   },
+   "StartEffectEmotionFlash":{  
+      "prefix":"StartEffectEmotionFlash(string& asTextCat, string& asTextEntry, string& asSound);",
+      "body":[  
+         "StartEffectEmotionFlash(\"${1:asTextCat}\", \"${2:asTextEntry}\", \"${3:asSound}\");"
+      ],
+      "description":""
+   },
+   "AddEffectVoice":{  
+      "prefix":"AddEffectVoice(string& asVoiceFile, string& asEffectFile, string& asTextCat, string& asTextEntry,bool abUsePosition, string& asPosEntity, float afMinDistance, float afMaxDistance);",
+      "body":[  
+         "AddEffectVoice(\"${1:asVoiceFile}\", \"${2:asEffectFile}\", \"${3:asTextCat}\", \"${4:asTextEntry}\", ${5:bool_abUsePosition}, \"${6:asPosEntity}\", ${7:float_afMinDistance}, ${8:float_afMaxDistance});"
+      ],
+      "description":""
+   },
+   "StopAllEffectVoices":{  
+      "prefix":"StopAllEffectVoices(float afFadeOutTime);",
+      "body":[  
+         "StopAllEffectVoices(${1:float_afFadeOutTime});"
+      ],
+      "description":""
+   },
+   "GetEffectVoiceActive":{  
+      "prefix":"GetEffectVoiceActive();",
+      "body":[  
+         "GetEffectVoiceActive();"
+      ],
+      "description":""
+   },
+   "SetEffectVoiceOverCallback":{  
+      "prefix":"SetEffectVoiceOverCallback(string& asFunc);",
+      "body":[  
+         "SetEffectVoiceOverCallback(\"${1:asFunc}\");"
+      ],
+      "description":""
+   },
+   "GetFlashbackIsActive":{  
+      "prefix":"GetFlashbackIsActive();",
+      "body":[  
+         "GetFlashbackIsActive();"
+      ],
+      "description":""
+   },
+   "StartPlayerSpawnPS":{  
+      "prefix":"StartPlayerSpawnPS(string& asSPSFile);",
+      "body":[  
+         "StartPlayerSpawnPS(\"${1:asSPSFile}\");"
+      ],
+      "description":""
+   },
+   "StopPlayerSpawnPS":{  
+      "prefix":"StopPlayerSpawnPS();",
+      "body":[  
+         "StopPlayerSpawnPS();"
+      ],
+      "description":""
+   },
+   "PlayGuiSound":{  
+      "prefix":"PlayGuiSound(string& asSoundFile, float afVolume);",
+      "body":[  
+         "PlayGuiSound(\"${1:asSoundFile}\", ${2:float_afVolume});"
+      ],
+      "description":""
+   },
+   "StartScreenShake":{  
+      "prefix":"StartScreenShake(float afAmount, float afTime, float afFadeInTime, float afFadeOutTime);",
+      "body":[  
+         "StartScreenShake(${1:float_afAmount}, ${2:float_afTim}, ${3:float_afFadeInTim}, ${4:float_afFadeOutTim});"
+      ],
+      "description":""
+   },
+   "SetInDarknessEffectsActive":{  
+      "prefix":"SetInDarknessEffectsActive(bool abX);",
+      "body":[  
+         "SetInDarknessEffectsActive(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetInsanitySetEnabled":{  
+      "prefix":"SetInsanitySetEnabled(string& asSet, bool abX);",
+      "body":[  
+         "SetInsanitySetEnabled(\"${1:asSet}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "StartInsanityEvent":{  
+      "prefix":"StartInsanityEvent(string &in asEventName);",
+      "body":[  
+         "StartInsanityEvent(\"${1:asEventName}\");"
+      ],
+      "description":""
+   },
+   "StartRandomInsanityEvent":{  
+      "prefix":"StartRandomInsanityEvent();",
+      "body":[  
+         "StartRandomInsanityEvent();"
+      ],
+      "description":""
+   },
+   "StopCurrentInsanityEvent":{  
+      "prefix":"StopCurrentInsanityEvent();",
+      "body":[  
+         "StopCurrentInsanityEvent();"
+      ],
+      "description":""
+   },
+   "InsanityEventIsActive":{  
+      "prefix":"InsanityEventIsActive();",
+      "body":[  
+         "InsanityEventIsActive();"
+      ],
+      "description":""
+   },
+   "SetPlayerActive":{  
+      "prefix":"SetPlayerActive(bool abActive);",
+      "body":[  
+         "SetPlayerActive(${1:bool_abActive});"
+      ],
+      "description":""
+   },
+   "ChangePlayerStateToNormal":{  
+      "prefix":"ChangePlayerStateToNormal();",
+      "body":[  
+         "ChangePlayerStateToNormal();"
+      ],
+      "description":""
+   },
+   "SetPlayerCrouching":{  
+      "prefix":"SetPlayerCrouching(bool abCrouch);",
+      "body":[  
+         "SetPlayerCrouching(${1:bool_abCrouch});"
+      ],
+      "description":""
+   },
+   "AddPlayerBodyForce":{  
+      "prefix":"AddPlayerBodyForce(float afX, float afY, float afZ, bool abUseLocalCoords);",
+      "body":[  
+         "AddPlayerBodyForce(${1:float_afX}, ${2:float_af}, ${3:float_af}, ${4:bool_abUseLocalCoord});"
+      ],
+      "description":""
+   },
+   "ShowPlayerCrossHairIcons":{  
+      "prefix":"ShowPlayerCrossHairIcons(bool abX);",
+      "body":[  
+         "ShowPlayerCrossHairIcons(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetPlayerSanity":{  
+      "prefix":"SetPlayerSanity(float afSanity);",
+      "body":[  
+         "SetPlayerSanity(${1:float_afSanity});"
+      ],
+      "description":""
+   },
+   "AddPlayerSanity":{  
+      "prefix":"AddPlayerSanity(float afSanity);",
+      "body":[  
+         "AddPlayerSanity(${1:float_afSanity});"
+      ],
+      "description":""
+   },
+   "GetPlayerSanity":{  
+      "prefix":"GetPlayerSanity();",
+      "body":[  
+         "GetPlayerSanity();"
+      ],
+      "description":""
+   },
+   "SetPlayerHealth":{  
+      "prefix":"SetPlayerHealth(float afHealth);",
+      "body":[  
+         "SetPlayerHealth(${1:float_afHealth});"
+      ],
+      "description":""
+   },
+   "AddPlayerHealth":{  
+      "prefix":"AddPlayerHealth(float afHealth);",
+      "body":[  
+         "AddPlayerHealth(${1:float_afHealth});"
+      ],
+      "description":""
+   },
+   "GetPlayerHealth":{  
+      "prefix":"GetPlayerHealth();",
+      "body":[  
+         "GetPlayerHealth();"
+      ],
+      "description":""
+   },
+   "SetPlayerLampOil":{  
+      "prefix":"SetPlayerLampOil(float afOil);",
+      "body":[  
+         "SetPlayerLampOil(${1:float_afOil});"
+      ],
+      "description":""
+   },
+   "AddPlayerLampOil":{  
+      "prefix":"AddPlayerLampOil(float afOil);",
+      "body":[  
+         "AddPlayerLampOil(${1:float_afOil});"
+      ],
+      "description":""
+   },
+   "GetPlayerLampOil":{  
+      "prefix":"GetPlayerLampOil();",
+      "body":[  
+         "GetPlayerLampOil();"
+      ],
+      "description":""
+   },
+   "GetPlayerSpeed":{  
+      "prefix":"GetPlayerSpeed();",
+      "body":[  
+         "GetPlayerSpeed();"
+      ],
+      "description":""
+   },
+   "GetPlayerYSpeed":{  
+      "prefix":"GetPlayerYSpeed();",
+      "body":[  
+         "GetPlayerYSpeed();"
+      ],
+      "description":""
+   },
+   "SetSanityDrainDisabled":{  
+      "prefix":"SetSanityDrainDisabled(bool abX);",
+      "body":[  
+         "SetSanityDrainDisabled(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "GiveSanityBoost":{  
+      "prefix":"GiveSanityBoost();",
+      "body":[  
+         "GiveSanityBoost();"
+      ],
+      "description":""
+   },
+   "GiveSanityBoostSmall":{  
+      "prefix":"GiveSanityBoostSmall();",
+      "body":[  
+         "GiveSanityBoostSmall();"
+      ],
+      "description":""
+   },
+   "GiveSanityDamage":{  
+      "prefix":"GiveSanityDamage(float afAmount, bool abUseEffect);",
+      "body":[  
+         "GiveSanityDamage(${1:float_afAmount}, ${2:bool_abUseEffec});"
+      ],
+      "description":""
+   },
+   "GivePlayerDamage":{  
+      "prefix":"GivePlayerDamage(float afAmount, string& asType, bool abSpinHead, bool abLethal);",
+      "body":[  
+         "GivePlayerDamage(${1:float_afAmount}, \"${2:asType}\", ${3:bool_abSpinHead}, ${4:bool_abLethal});"
+      ],
+      "description":""
+   },
+   "FadePlayerFOVMulTo":{  
+      "prefix":"FadePlayerFOVMulTo(float afX, float afSpeed);",
+      "body":[  
+         "FadePlayerFOVMulTo(${1:float_afX}, ${2:float_afSpee});"
+      ],
+      "description":""
+   },
+   "FadePlayerAspectMulTo":{  
+      "prefix":"FadePlayerAspectMulTo(float afX, float afSpeed);",
+      "body":[  
+         "FadePlayerAspectMulTo(${1:float_afX}, ${2:float_afSpee});"
+      ],
+      "description":""
+   },
+   "FadePlayerRollTo":{  
+      "prefix":"FadePlayerRollTo(float afX, float afSpeedMul, float afMaxSpeed);",
+      "body":[  
+         "FadePlayerRollTo(${1:float_afX}, ${2:float_afSpeedMu}, ${3:float_afMaxSpee});"
+      ],
+      "description":""
+   },
+   "MovePlayerHeadPos":{  
+      "prefix":"MovePlayerHeadPos(float afX, float afY, float afZ, float afSpeed, float afSlowDownDist);",
+      "body":[  
+         "MovePlayerHeadPos(${1:float_afX}, ${2:float_af}, ${3:float_af}, ${4:float_afSpee}, ${5:float_afSlowDownDis});"
+      ],
+      "description":""
+   },
+   "StartPlayerLookAt":{  
+      "prefix":"StartPlayerLookAt(string& asEntityName, float afSpeedMul, float afMaxSpeed, string& asAtTargetCallback);",
+      "body":[  
+         "StartPlayerLookAt(\"${1:asEntityName}\", ${2:float_afSpeedMul}, ${3:float_afMaxSpeed}, \"${4:asAtTargetCallback}\");"
+      ],
+      "description":""
+   },
+   "StopPlayerLookAt":{  
+      "prefix":"StopPlayerLookAt();",
+      "body":[  
+         "StopPlayerLookAt();"
+      ],
+      "description":""
+   },
+   "SetPlayerMoveSpeedMul":{  
+      "prefix":"SetPlayerMoveSpeedMul(float afMul);",
+      "body":[  
+         "SetPlayerMoveSpeedMul(${1:float_afMul});"
+      ],
+      "description":""
+   },
+   "SetPlayerRunSpeedMul":{  
+      "prefix":"SetPlayerRunSpeedMul(float afMul);",
+      "body":[  
+         "SetPlayerRunSpeedMul(${1:float_afMul});"
+      ],
+      "description":""
+   },
+   "SetPlayerLookSpeedMul":{  
+      "prefix":"SetPlayerLookSpeedMul(float afMul);",
+      "body":[  
+         "SetPlayerLookSpeedMul(${1:float_afMul});"
+      ],
+      "description":""
+   },
+   "SetPlayerJumpForceMul":{  
+      "prefix":"SetPlayerJumpForceMul(float afMul);",
+      "body":[  
+         "SetPlayerJumpForceMul(${1:float_afMul});"
+      ],
+      "description":""
+   },
+   "SetPlayerJumpDisabled":{  
+      "prefix":"SetPlayerJumpDisabled(bool abX);",
+      "body":[  
+         "SetPlayerJumpDisabled(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetPlayerCrouchDisabled":{  
+      "prefix":"SetPlayerCrouchDisabled(bool abX);",
+      "body":[  
+         "SetPlayerCrouchDisabled(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "TeleportPlayer":{  
+      "prefix":"TeleportPlayer(string& asStartPosName);",
+      "body":[  
+         "TeleportPlayer(\"${1:asStartPosName}\");"
+      ],
+      "description":""
+   },
+   "SetLanternActive":{  
+      "prefix":"SetLanternActive(bool abX, bool abUseEffects);",
+      "body":[  
+         "SetLanternActive(${1:bool_abX}, ${2:bool_abUseEffect});"
+      ],
+      "description":""
+   },
+   "GetLanternActive":{  
+      "prefix":"GetLanternActive();",
+      "body":[  
+         "GetLanternActive();"
+      ],
+      "description":""
+   },
+   "SetLanternDisabled":{  
+      "prefix":"SetLanternDisabled(bool abX);",
+      "body":[  
+         "SetLanternDisabled(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetLanternLitCallback":{  
+      "prefix":"SetLanternLitCallback(string& asCallback);",
+      "body":[  
+         "SetLanternLitCallback(\"${1:asCallback}\");"
+      ],
+      "description":""
+   },
+   "SetMessage":{  
+      "prefix":"SetMessage(string& asTextCategory, string& asTextEntry, float afTime);",
+      "body":[  
+         "SetMessage(\"${1:asTextCategory}\", \"${2:asTextEntry}\", ${3:float_afTime});"
+      ],
+      "description":""
+   },
+   "SetDeathHint":{  
+      "prefix":"SetDeathHint(string& asTextCategory, string& asTextEntry);",
+      "body":[  
+         "SetDeathHint(\"${1:asTextCategory}\", \"${2:asTextEntry}\");"
+      ],
+      "description":""
+   },
+   "DisableDeathStartSound":{  
+      "prefix":"DisableDeathStartSound();",
+      "body":[  
+         "DisableDeathStartSound();"
+      ],
+      "description":""
+   },
+   "MovePlayerForward":{  
+      "prefix":"MovePlayerForward(float afAmount)",
+      "body":[  
+         "MovePlayerForward(${1:float_afAmount})"
+      ],
+      "description":""
+   },
+   "SetPlayerFallDamageDisabled":{  
+      "prefix":"SetPlayerFallDamageDisabled(bool abX);",
+      "body":[  
+         "SetPlayerFallDamageDisabled(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetPlayerPos":{  
+      "prefix":"SetPlayerPos(float afX, float afY, float afZ);",
+      "body":[  
+         "SetPlayerPos(${1:float_afX}, ${2:float_af}, ${3:float_af});"
+      ],
+      "description":""
+   },
+   "GetPlayerPosX":{  
+      "prefix":"GetPlayerPosX();",
+      "body":[  
+         "GetPlayerPosX();"
+      ],
+      "description":""
+   },
+   "GetPlayerPosY":{  
+      "prefix":"GetPlayerPosY();",
+      "body":[  
+         "GetPlayerPosY();"
+      ],
+      "description":""
+   },
+   "GetPlayerPosZ":{  
+      "prefix":"GetPlayerPosZ();",
+      "body":[  
+         "GetPlayerPosZ();"
+      ],
+      "description":""
+   },
+   "AddNote":{  
+      "prefix":"AddNote(string& asNameAndTextEntry, string& asImage);",
+      "body":[  
+         "AddNote(\"${1:asNameAndTextEntry}\", \"${2:asImage}\");"
+      ],
+      "description":""
+   },
+   "AddDiary":{  
+      "prefix":"AddDiary(string& asNameAndTextEntry, string& asImage);",
+      "body":[  
+         "AddDiary(\"${1:asNameAndTextEntry}\", \"${2:asImage}\");"
+      ],
+      "description":""
+   },
+   "ReturnOpenJournal":{  
+      "prefix":"ReturnOpenJournal(bool abOpenJournal);",
+      "body":[  
+         "ReturnOpenJournal(${1:bool_abOpenJournal});"
+      ],
+      "description":""
+   },
+   "AddQuest":{  
+      "prefix":"AddQuest(string& asName, string& asNameAndTextEntry);",
+      "body":[  
+         "AddQuest(\"${1:asName}\", \"${2:asNameAndTextEntry}\");"
+      ],
+      "description":""
+   },
+   "CompleteQuest":{  
+      "prefix":"CompleteQuest(string& asName, string& asNameAndTextEntry);",
+      "body":[  
+         "CompleteQuest(\"${1:asName}\", \"${2:asNameAndTextEntry}\");"
+      ],
+      "description":""
+   },
+   "QuestIsCompleted":{  
+      "prefix":"QuestIsCompleted(string& asName);",
+      "body":[  
+         "QuestIsCompleted(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "QuestIsAdded":{  
+      "prefix":"QuestIsAdded(string& asName);",
+      "body":[  
+         "QuestIsAdded(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetNumberOfQuestsInMap":{  
+      "prefix":"SetNumberOfQuestsInMap(int alNumberOfQuests);",
+      "body":[  
+         "SetNumberOfQuestsInMap(${1:int_alNumberOfQuests});"
+      ],
+      "description":""
+   },
+   "GiveHint ":{  
+      "prefix":"GiveHint (string& asName, string& asMessageCat, string& asMessageEntry, float afTimeShown);",
+      "body":[  
+         "GiveHint (\"${1:asName}\", \"${2:asMessageCat}\", \"${3:asMessageEntry}\", ${4:float_afTimeShown});"
+      ],
+      "description":""
+   },
+   "RemoveHint ":{  
+      "prefix":"RemoveHint (string& asName);",
+      "body":[  
+         "RemoveHint (\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "BlockHint ":{  
+      "prefix":"BlockHint (string& asName);",
+      "body":[  
+         "BlockHint (\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "UnBlockHint ":{  
+      "prefix":"UnBlockHint (string& asName);",
+      "body":[  
+         "UnBlockHint (\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "ExitInventory":{  
+      "prefix":"ExitInventory();",
+      "body":[  
+         "ExitInventory();"
+      ],
+      "description":""
+   },
+   "SetInventoryDisabled":{  
+      "prefix":"SetInventoryDisabled(bool abX);",
+      "body":[  
+         "SetInventoryDisabled(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetInventoryMessage":{  
+      "prefix":"SetInventoryMessage(string& asTextCategory, string& asTextEntry, float afTime);",
+      "body":[  
+         "SetInventoryMessage(\"${1:asTextCategory}\", \"${2:asTextEntry}\", ${3:float_afTime});"
+      ],
+      "description":""
+   },
+   "GiveItem":{  
+      "prefix":"GiveItem(string& asName, string& asType, string& asSubTypeName, string& asImageName, float afAmount);",
+      "body":[  
+         "GiveItem(\"${1:asName}\", \"${2:asType}\", \"${3:asSubTypeName}\", \"${4:asImageName}\", ${5:float_afAmount});"
+      ],
+      "description":""
+   },
+   "RemoveItem":{  
+      "prefix":"RemoveItem(string& asName);",
+      "body":[  
+         "RemoveItem(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "HasItem":{  
+      "prefix":"HasItem(string& asName);",
+      "body":[  
+         "HasItem(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "GiveItemFromFile":{  
+      "prefix":"GiveItemFromFile(string& asName, string& asFileName);",
+      "body":[  
+         "GiveItemFromFile(\"${1:asName}\", \"${2:asFileName}\");"
+      ],
+      "description":""
+   },
+   "AddCombineCallback":{  
+      "prefix":"AddCombineCallback(string& asName, string& asItemA, string& asItemB, string& asFunction, bool abAutoRemove);",
+      "body":[  
+         "AddCombineCallback(\"${1:asName}\", \"${2:asItem}\", \"${3:asItem}\", \"${4:asFunction}\", ${5:bool_abAutoRemove});"
+      ],
+      "description":""
+   },
+   "RemoveCombineCallback":{  
+      "prefix":"RemoveCombineCallback(string& asName);",
+      "body":[  
+         "RemoveCombineCallback(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "AddUseItemCallback":{  
+      "prefix":"AddUseItemCallback(string& asName, string& asItem, string& asEntity, string& asFunction, bool abAutoDestroy);",
+      "body":[  
+         "AddUseItemCallback(\"${1:asName}\", \"${2:asItem}\", \"${3:asEntity}\", \"${4:asFunction}\", ${5:bool_abAutoDestroy});"
+      ],
+      "description":""
+   },
+   "RemoveUseItemCallback":{  
+      "prefix":"RemoveUseItemCallback(string& asName);",
+      "body":[  
+         "RemoveUseItemCallback(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetEntityActive":{  
+      "prefix":"SetEntityActive(string& asName, bool abActive);",
+      "body":[  
+         "SetEntityActive(\"${1:asName}\", ${2:bool_abActive});"
+      ],
+      "description":""
+   },
+   "SetEntityVisible":{  
+      "prefix":"SetEntityVisible(string &in asName, bool abVisible);",
+      "body":[  
+         "SetEntityVisible(\"${1:asName}\", ${2:bool_abVisible});"
+      ],
+      "description":""
+   },
+   "GetEntityExists":{  
+      "prefix":"GetEntityExists(string& asName);",
+      "body":[  
+         "GetEntityExists(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetEntityCustomFocusCrossHair":{  
+      "prefix":"SetEntityCustomFocusCrossHair(string& asName, string& asCrossHair);",
+      "body":[  
+         "SetEntityCustomFocusCrossHair(\"${1:asName}\", \"${2:asCrossHair}\");"
+      ],
+      "description":""
+   },
+   "CreateEntityAtArea":{  
+      "prefix":"CreateEntityAtArea(string& asEntityName, string& asEntityFile, string& asAreaName, bool abFullGameSave);",
+      "body":[  
+         "CreateEntityAtArea(\"${1:asEntityName}\", \"${2:asEntityFile}\", \"${3:asAreaName}\", ${4:bool_abFullGameSave});"
+      ],
+      "description":""
+   },
+   "ReplaceEntity":{  
+      "prefix":"ReplaceEntity(string &in asName, string &in asBodyName, string &in asNewEntityName, string &in asNewEntityFile, bool abFullGameSave);",
+      "body":[  
+         "ReplaceEntity(\"${1:asName}\", \"${2:asBodyName}\", \"${3:asNewEntityName}\", \"${4:asNewEntityFile}\", ${5:bool_abFullGameSave});"
+      ],
+      "description":""
+   },
+   "PlaceEntityAtEntity":{  
+      "prefix":"PlaceEntityAtEntity(string &in asName, string &in asTargetEntity, string &in asTargetBodyName, bool abUseRotation);",
+      "body":[  
+         "PlaceEntityAtEntity(\"${1:asName}\", \"${2:asTargetEntity}\", \"${3:asTargetBodyName}\", ${4:bool_abUseRotation});"
+      ],
+      "description":""
+   },
+   "SetEntityPos":{  
+      "prefix":"SetEntityPos(string &in asName, float afX, float afY, float afZ);",
+      "body":[  
+         "SetEntityPos(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ});"
+      ],
+      "description":""
+   },
+   "GetEntityPosX":{  
+      "prefix":"GetEntityPosX(string &in asName);",
+      "body":[  
+         "GetEntityPosX(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "GetEntityPosY":{  
+      "prefix":"GetEntityPosY(string &in asName);",
+      "body":[  
+         "GetEntityPosY(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "GetEntityPosZ":{  
+      "prefix":"GetEntityPosZ(string &in asName);",
+      "body":[  
+         "GetEntityPosZ(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetEntityPlayerLookAtCallback":{  
+      "prefix":"SetEntityPlayerLookAtCallback(string& asName, string& asCallback, bool abRemoveWhenLookedAt);",
+      "body":[  
+         "SetEntityPlayerLookAtCallback(\"${1:asName}\", \"${2:asCallbacK}\", ${3:bool_abRemoveWhenLookedAt});"
+      ],
+      "description":""
+   },
+   "SetEntityPlayerInteractCallback":{  
+      "prefix":"SetEntityPlayerInteractCallback(string& asName, string& asCallback, bool abRemoveOnInteraction);",
+      "body":[  
+         "SetEntityPlayerInteractCallback(\"${1:asName}\", \"${2:asCallback}\", ${3:bool_abRemoveOnInteraction});"
+      ],
+      "description":""
+   },
+   "SetEntityCallbackFunc":{  
+      "prefix":"SetEntityCallbackFunc(string& asName, string& asCallback);",
+      "body":[  
+         "SetEntityCallbackFunc(\"${1:asName}\", \"${2:asCallback}\");"
+      ],
+      "description":""
+   },
+   "SetEntityConnectionStateChangeCallback":{  
+      "prefix":"SetEntityConnectionStateChangeCallback(string& asName, string& asCallback);",
+      "body":[  
+         "SetEntityConnectionStateChangeCallback(\"${1:asName}\", \"${2:asCallback}\");"
+      ],
+      "description":""
+   },
+   "SetEntityInteractionDisabled":{  
+      "prefix":"SetEntityInteractionDisabled(string& asName, bool abDisabled);",
+      "body":[  
+         "SetEntityInteractionDisabled(\"${1:asName}\", ${2:bool_abDisabled});"
+      ],
+      "description":""
+   },
+   "BreakJoint ":{  
+      "prefix":"BreakJoint (string& asName);",
+      "body":[  
+         "BreakJoint (\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "AddEntityCollideCallback":{  
+      "prefix":"AddEntityCollideCallback(string& asParentName, string& asChildName, string& asFunction, bool abDeleteOnCollide, int alStates);",
+      "body":[  
+         "AddEntityCollideCallback(\"${1:asParentName}\", \"${2:asChildName}\", \"${3:asFunction}\", ${4:bool_abDeleteOnCollide}, ${5:int_alStates});"
+      ],
+      "description":""
+   },
+   "RemoveEntityCollideCallback":{  
+      "prefix":"RemoveEntityCollideCallback(string& asParentName, string& asChildName);",
+      "body":[  
+         "RemoveEntityCollideCallback(\"${1:asParentName}\", \"${2:asChildName}\");"
+      ],
+      "description":""
+   },
+   "GetEntitiesCollide":{  
+      "prefix":"GetEntitiesCollide(string& asEntityA, string& asEntityB);",
+      "body":[  
+         "GetEntitiesCollide(\"${1:asEntityA}\", \"${2:asEntityB}\");"
+      ],
+      "description":""
+   },
+   "SetBodyMass":{  
+      "prefix":"SetBodyMass(string &in asName, float afMass);",
+      "body":[  
+         "SetBodyMass(\"${1:asName}\", ${2:float_afMass});"
+      ],
+      "description":""
+   },
+   "GetBodyMass":{  
+      "prefix":"GetBodyMass(string &in asName);",
+      "body":[  
+         "GetBodyMass(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetPropEffectActive":{  
+      "prefix":"SetPropEffectActive(string& asName, bool abActive, bool abFadeAndPlaySounds);",
+      "body":[  
+         "SetPropEffectActive(\"${1:asName}\", ${2:bool_abActive}, ${3:bool_abFadeAndPlaySounds});"
+      ],
+      "description":""
+   },
+   "SetPropActiveAndFade":{  
+      "prefix":"SetPropActiveAndFade(string& asName, bool abActive, float afFadeTime);",
+      "body":[  
+         "SetPropActiveAndFade(\"${1:asName}\", ${2:bool_abActive}, ${3:float_afFadeTime});"
+      ],
+      "description":""
+   },
+   "SetPropStaticPhysics":{  
+      "prefix":"SetPropStaticPhysics(string& asName, bool abX);",
+      "body":[  
+         "SetPropStaticPhysics(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "GetPropIsInteractedWith":{  
+      "prefix":"GetPropIsInteractedWith(string& asName);",
+      "body":[  
+         "GetPropIsInteractedWith(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "RotatePropToSpeed":{  
+      "prefix":"RotatePropToSpeed(string& asName, float afAcc, float afGoalSpeed, float afAxisX, float afAxisY, float afAxisZ, bool abResetSpeed, string& asOffsetArea);",
+      "body":[  
+         "RotatePropToSpeed(\"${1:asName}\", ${2:float_afAcc}, ${3:float_afGoalSpeed}, ${4:float_afAxisX}, ${5:float_afAxisY}, ${6:float_afAxisZ}, ${7:bool_abResetSpeed}, \"${8:asOffsetArea}\");"
+      ],
+      "description":""
+   },
+   "StopPropMovement":{  
+      "prefix":"StopPropMovement(string& asName);",
+      "body":[  
+         "StopPropMovement(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "AddAttachedPropToProp":{  
+      "prefix":"AddAttachedPropToProp(string& asPropName, string& asAttachName, string& asAttachFile, float afPosX, float afPosY, float afPosZ, float afRotX, float afRotY, float afRotZ);",
+      "body":[  
+         "AddAttachedPropToProp(\"${1:asPropName}\", \"${2:asAttachName}\", \"${3:asAttachFile}\", ${4:float_afPosX}, ${5:float_afPosY}, ${6:float_afPosZ}, ${7:float_afRotX}, ${8:float_afRotY}, ${9:float_afRotZ});"
+      ],
+      "description":""
+   },
+   "AttachPropToProp":{  
+      "prefix":"AttachPropToProp(string& asPropName, string& asAttachName, string& asAttachFile, float afPosX, float afPosY, float afPosZ, float afRotX, float afRotY, float afRotZ);",
+      "body":[  
+         "AttachPropToProp(\"${1:asPropName}\", \"${2:asAttachName}\", \"${3:asAttachFile}\", ${4:float_afPosX}, ${5:float_afPosY}, ${6:float_afPosZ}, ${7:float_afRotX}, ${8:float_afRotY}, ${9:float_afRotZ});"
+      ],
+      "description":""
+   },
+   "RemoveAttachedPropFromProp":{  
+      "prefix":"RemoveAttachedPropFromProp(string& asPropName, string& asAttachName);",
+      "body":[  
+         "RemoveAttachedPropFromProp(\"${1:asPropName}\", \"${2:asAttachName}\");"
+      ],
+      "description":""
+   },
+   "SetPropHealth":{  
+      "prefix":"SetPropHealth(string& asName, float afHealth);",
+      "body":[  
+         "SetPropHealth(\"${1:asName}\", ${2:float_afHealth});"
+      ],
+      "description":""
+   },
+   "AddPropHealth":{  
+      "prefix":"AddPropHealth(string& asName, float afHealth);",
+      "body":[  
+         "AddPropHealth(\"${1:asName}\", ${2:float_afHealth});"
+      ],
+      "description":""
+   },
+   "GetPropHealth":{  
+      "prefix":"GetPropHealth(string& asName);",
+      "body":[  
+         "GetPropHealth(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "ResetProp":{  
+      "prefix":"ResetProp(string& asName);",
+      "body":[  
+         "ResetProp(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "PlayPropAnimation":{  
+      "prefix":"PlayPropAnimation(string& asProp, string& asAnimation, float afFadeTime, bool abLoop, string& asCallback);",
+      "body":[  
+         "PlayPropAnimation(\"${1:asProp}\", \"${2:asAnimation}\", ${3:float_afFadeTime}, ${4:bool_abLoop}, \"${5:asCallback}\");"
+      ],
+      "description":""
+   },
+   "AddPropForce":{  
+      "prefix":"AddPropForce(string& asName, float afX, float afY, float afZ, string& asCoordSystem);",
+      "body":[  
+         "AddPropForce(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ}, \"${5:asCoordSyste}\");"
+      ],
+      "description":""
+   },
+   "AddPropImpulse":{  
+      "prefix":"AddPropImpulse(string& asName, float afX, float afY, float afZ, string& asCoordSystem);",
+      "body":[  
+         "AddPropImpulse(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ}, \"${5:asCoordSystem}\");"
+      ],
+      "description":""
+   },
+   "AddBodyForce":{  
+      "prefix":"AddBodyForce(string& asName, float afX, float afY, float afZ, string& asCoordSystem);",
+      "body":[  
+         "AddBodyForce(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ}, \"${5:asCoordSystem}\");"
+      ],
+      "description":""
+   },
+   "AddBodyImpulse":{  
+      "prefix":"AddBodyImpulse(string& asName, float afX, float afY, float afZ, string& asCoordSystem);",
+      "body":[  
+         "AddBodyImpulse(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ}, \"${5:asCoordSystem}\");"
+      ],
+      "description":""
+   },
+   "InteractConnectPropWithRope":{  
+      "prefix":"InteractConnectPropWithRope(string& asName, string& asPropName, string& asRopeName, bool abInteractOnly, float afSpeedMul, float afToMinSpeed, float afToMaxSpeed, bool abInvert, int alStatesUsed);",
+      "body":[  
+         "InteractConnectPropWithRope(\"${1:asName}\", \"${2:asPropName}\", \"${3:asRopeName}\", ${4:bool_abInteractOnly}, ${5:float_afSpeedMul}, ${6:float_afToMinSpeed}, ${7:float_afToMaxSpeed}, ${8:bool_abInvert}, ${9:int_alStatesUsed});"
+      ],
+      "description":""
+   },
+   "InteractConnectPropWithMoveObject":{  
+      "prefix":"InteractConnectPropWithMoveObject(string& asName, string& asPropName, string& asMoveObjectName, bool abInteractOnly, bool abInvert, int alStatesUsed);",
+      "body":[  
+         "InteractConnectPropWithMoveObject(\"${1:asName}\", \"${2:asPropName}\", \"${3:asMoveObjectName}\", ${4:bool_abInteractOnly}, ${5:bool_abInvert}, ${6:int_alStatesUsed});"
+      ],
+      "description":""
+   },
+   "ConnectEntities":{  
+      "prefix":"ConnectEntities(string& asName, string& asMainEntity, string& asConnectEntity, bool abInvertStateSent, int alStatesUsed, string& asCallbackFunc);",
+      "body":[  
+         "ConnectEntities(\"${1:asName}\", \"${2:asMainEntity}\", \"${3:asConnectEntity}\", ${4:bool_abInvertStateSent}, ${5:int_alStatesUsed}, \"${6:asCallbackFunc}\");"
+      ],
+      "description":""
+   },
+   "SetLampLit":{  
+      "prefix":"SetLampLit(string& asName, bool abLit, bool abEffects);",
+      "body":[  
+         "SetLampLit(\"${1:asName}\", ${2:bool_abLit}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetSwingDoorLocked":{  
+      "prefix":"SetSwingDoorLocked(string& asName, bool abLocked, bool abEffects);",
+      "body":[  
+         "SetSwingDoorLocked(\"${1:asName}\", ${2:bool_abLocked}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetSwingDoorClosed":{  
+      "prefix":"SetSwingDoorClosed(string& asName, bool abClosed, bool abEffects);",
+      "body":[  
+         "SetSwingDoorClosed(\"${1:asName}\", ${2:bool_abClosed}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "GetSwingDoorLocked":{  
+      "prefix":"GetSwingDoorLocked(string& asName);",
+      "body":[  
+         "GetSwingDoorLocked(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "GetSwingDoorClosed":{  
+      "prefix":"GetSwingDoorClosed(string& asName);",
+      "body":[  
+         "GetSwingDoorClosed(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetSwingDoorDisableAutoClose":{  
+      "prefix":"SetSwingDoorDisableAutoClose(string& asName, bool abDisableAutoClose);",
+      "body":[  
+         "SetSwingDoorDisableAutoClose(\"${1:asName}\", ${2:bool_abDisableAutoClose});"
+      ],
+      "description":""
+   },
+   "GetSwingDoorState":{  
+      "prefix":"GetSwingDoorState(string& asName);",
+      "body":[  
+         "GetSwingDoorState(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetLevelDoorLocked":{  
+      "prefix":"SetLevelDoorLocked(string& asName, bool abLocked);",
+      "body":[  
+         "SetLevelDoorLocked(\"${1:asName}\", ${2:bool_abLocked});"
+      ],
+      "description":""
+   },
+   "SetLevelDoorLockedSound":{  
+      "prefix":"SetLevelDoorLockedSound(string& asName, string& asSound);",
+      "body":[  
+         "SetLevelDoorLockedSound(\"${1:asName}\", \"${2:asSound}\");"
+      ],
+      "description":""
+   },
+   "SetLevelDoorLockedText":{  
+      "prefix":"SetLevelDoorLockedText(string& asName, string& asTextCat, string& asTextEntry);",
+      "body":[  
+         "SetLevelDoorLockedText(\"${1:asName}\", \"${2:asTextCat}\", \"${3:asTextEntry}\");"
+      ],
+      "description":""
+   },
+   "SetMoveObjectState":{  
+      "prefix":"SetMoveObjectState(string& asName, float afState);",
+      "body":[  
+         "SetMoveObjectState(\"${1:asName}\", ${2:float_afState});"
+      ],
+      "description":""
+   },
+   "SetMoveObjectStateExt":{  
+      "prefix":"SetMoveObjectStateExt(string& asName, float afState, float afAcc, float afMaxSpeed, float afSlowdownDist, bool abResetSpeed);",
+      "body":[  
+         "SetMoveObjectStateExt(\"${1:asName}\", ${2:float_afState}, ${3:float_afAcc}, ${4:float_afMaxSpeed}, ${5:float_afSlowdownDist}, ${6:bool_abResetSpeed});"
+      ],
+      "description":""
+   },
+   "SetPropObjectStuckState":{  
+      "prefix":"SetPropObjectStuckState(string& asName, int alState);",
+      "body":[  
+         "SetPropObjectStuckState(\"${1:asName}\", ${2:int_alState});"
+      ],
+      "description":""
+   },
+   "SetWheelStuckState":{  
+      "prefix":"SetWheelStuckState(string& asName, int alState, bool abEffects);",
+      "body":[  
+         "SetWheelStuckState(\"${1:asName}\", ${2:int_alState}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetLeverStuckState":{  
+      "prefix":"SetLeverStuckState(string& asName, int alState, bool abEffects);",
+      "body":[  
+         "SetLeverStuckState(\"${1:asName}\", ${2:int_alState}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetWheelAngle":{  
+      "prefix":"SetWheelAngle(string& asName, float afAngle, bool abAutoMove);",
+      "body":[  
+         "SetWheelAngle(\"${1:asName}\", ${2:float_afAngle}, ${3:bool_abAutoMove});"
+      ],
+      "description":""
+   },
+   "SetWheelInteractionDisablesStuck":{  
+      "prefix":"SetWheelInteractionDisablesStuck(string& asName, bool abX);",
+      "body":[  
+         "SetWheelInteractionDisablesStuck(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetLeverInteractionDisablesStuck":{  
+      "prefix":"SetLeverInteractionDisablesStuck(string& asName, bool abX);",
+      "body":[  
+         "SetLeverInteractionDisablesStuck(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "GetLeverState":{  
+      "prefix":"GetLeverState(string& asName);",
+      "body":[  
+         "GetLeverState(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetMultiSliderStuckState":{  
+      "prefix":"SetMultiSliderStuckState(string& asName, int alStuckState, bool abEffects);",
+      "body":[  
+         "SetMultiSliderStuckState(\"${1:asName}\", ${2:int_alStuckState}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetMultiSliderCallback":{  
+      "prefix":"SetMultiSliderCallback(string& asName, string& asCallback);",
+      "body":[  
+         "SetMultiSliderCallback(\"${1:asName}\", \"${2:asCallback}\");"
+      ],
+      "description":""
+   },
+   "SetButtonSwitchedOn":{  
+      "prefix":"SetButtonSwitchedOn(string& asName, bool abSwitchedOn, bool abEffects);",
+      "body":[  
+         "SetButtonSwitchedOn(\"${1:asName}\", ${2:bool_abSwitchedOn}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetAllowStickyAreaAttachment":{  
+      "prefix":"SetAllowStickyAreaAttachment(bool abX);",
+      "body":[  
+         "SetAllowStickyAreaAttachment(${1:bool_abX});"
+      ],
+      "description":""
+   },
+   "AttachPropToStickyArea":{  
+      "prefix":"AttachPropToStickyArea(string& asAreaName, string& asProp);",
+      "body":[  
+         "AttachPropToStickyArea(\"${1:asAreaName}\", \"${2:asProp}\");"
+      ],
+      "description":""
+   },
+   "AttachBodyToStickyArea":{  
+      "prefix":"AttachBodyToStickyArea(string& asAreaName, string& asBody);",
+      "body":[  
+         "AttachBodyToStickyArea(\"${1:asAreaName}\", \"${2:asBody}\");"
+      ],
+      "description":""
+   },
+   "DetachFromStickyArea":{  
+      "prefix":"DetachFromStickyArea(string& asAreaName);",
+      "body":[  
+         "DetachFromStickyArea(\"${1:asAreaName}\");"
+      ],
+      "description":""
+   },
+   "SetNPCAwake":{  
+      "prefix":"SetNPCAwake(string& asName, bool abAwake, bool abEffects);",
+      "body":[  
+         "SetNPCAwake(\"${1:asName}\", ${2:bool_abAwake}, ${3:bool_abEffects});"
+      ],
+      "description":""
+   },
+   "SetNPCFollowPlayer":{  
+      "prefix":"SetNPCFollowPlayer(string& asName, bool abX);",
+      "body":[  
+         "SetNPCFollowPlayer(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetEnemyDisabled":{  
+      "prefix":"SetEnemyDisabled(string& asName, bool abDisabled);",
+      "body":[  
+         "SetEnemyDisabled(\"${1:asName}\", ${2:bool_abDisabled});"
+      ],
+      "description":""
+   },
+   "SetEnemyIsHallucination":{  
+      "prefix":"SetEnemyIsHallucination(string& asName, bool abX);",
+      "body":[  
+         "SetEnemyIsHallucination(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "FadeEnemyToSmoke":{  
+      "prefix":"FadeEnemyToSmoke(string& asName, bool abPlaySound);",
+      "body":[  
+         "FadeEnemyToSmoke(\"${1:asName}\", ${2:bool_abPlaySound});"
+      ],
+      "description":""
+   },
+   "ShowEnemyPlayerPosition":{  
+      "prefix":"ShowEnemyPlayerPosition(string& asName);",
+      "body":[  
+         "ShowEnemyPlayerPosition(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "AlertEnemyOfPlayerPresence":{  
+      "prefix":"AlertEnemyOfPlayerPresence(string &in asName);",
+      "body":[  
+         "AlertEnemyOfPlayerPresence(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "SetEnemyDisableTriggers":{  
+      "prefix":"SetEnemyDisableTriggers(string& asName, bool abX);",
+      "body":[  
+         "SetEnemyDisableTriggers(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "AddEnemyPatrolNode":{  
+      "prefix":"AddEnemyPatrolNode(string& asName, string& asNodeName, float afWaitTime, string& asAnimation);",
+      "body":[  
+         "AddEnemyPatrolNode(\"${1:asName}\", \"${2:asNodeName}\", ${3:float_afWaitTime}, \"${4:asAnimation}\");"
+      ],
+      "description":""
+   },
+   "ClearEnemyPatrolNodes":{  
+      "prefix":"ClearEnemyPatrolNodes(string& asEnemyName);",
+      "body":[  
+         "ClearEnemyPatrolNodes(\"${1:asEnemyName}\");"
+      ],
+      "description":""
+   },
+   "SetEnemySanityDecreaseActive":{  
+      "prefix":"SetEnemySanityDecreaseActive(string &in asName, bool abX);",
+      "body":[  
+         "SetEnemySanityDecreaseActive(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "TeleportEnemyToNode":{  
+      "prefix":"TeleportEnemyToNode(string &in asEnemyName, string &in asNodeName, bool abChangeY);",
+      "body":[  
+         "TeleportEnemyToNode(\"${1:asEnemyName}\", \"${2:asNodeName}\", ${3:bool_abChangeY});"
+      ],
+      "description":""
+   },
+   "TeleportEnemyToEntity":{  
+      "prefix":"TeleportEnemyToEntity(string &in asEnemyName, string &in asTargetEntity, string &in asTargetBody, bool abChangeY);",
+      "body":[  
+         "TeleportEnemyToEntity(\"${1:asEnemyName}\", \"${2:asTargetEntity}\", \"${3:asTargetBody}\", ${4:bool_abChangeY});"
+      ],
+      "description":""
+   },
+   "ChangeManPigPose":{  
+      "prefix":"ChangeManPigPose(string&in asName, string&in asPoseType);",
+      "body":[  
+         "ChangeManPigPose(\"${1:asName}\", \"${2:asPoseType}\");"
+      ],
+      "description":""
+   },
+   "SetTeslaPigFadeDisabled":{  
+      "prefix":"SetTeslaPigFadeDisabled(string&in asName, bool abX);",
+      "body":[  
+         "SetTeslaPigFadeDisabled(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetTeslaPigSoundDisabled":{  
+      "prefix":"SetTeslaPigSoundDisabled(string&in asName, bool abX);",
+      "body":[  
+         "SetTeslaPigSoundDisabled(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "SetTeslaPigEasyEscapeDisabled":{  
+      "prefix":"SetTeslaPigEasyEscapeDisabled(string&in asName, bool abX);",
+      "body":[  
+         "SetTeslaPigEasyEscapeDisabled(\"${1:asName}\", ${2:bool_abX});"
+      ],
+      "description":""
+   },
+   "ForceTeslaPigSighting":{  
+      "prefix":"ForceTeslaPigSighting(string&in asName);",
+      "body":[  
+         "ForceTeslaPigSighting(\"${1:asName}\");"
+      ],
+      "description":""
+   },
+   "GetEnemyStateName":{  
+      "prefix":"GetEnemyStateName(string &in asName);",
+      "body":[  
+         "GetEnemyStateName(\"${1:asName}\");"
+      ],
+      "description":""
+   }
+}

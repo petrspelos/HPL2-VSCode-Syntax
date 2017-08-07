@@ -1,0 +1,23 @@
+{
+    "name": "HPL2Syntax",
+    "displayName": "Amnesia (HPL2) Engine Function Signatures Snippets",
+    "publisher": "Spelos",
+    "description": "Amnesia: The Dark Descent script function signatures auto-complete.",
+    "version": "0.1.3",
+    "icon": "https://i.imgur.com/BMsR6y0.png",
+    "engines": { "vscode": "0.10.x" },
+    "galleryBanner": {
+        "color": "#64859a",
+        "theme": "dark"
+    },
+    "categories": ["Snippets"],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "cpp",
+                "path": "snippets/cpp.json"
+            }
+        ]
+    },
+    "homepage": "https://github.com/petrspelos/HPL2-VSCode-Syntax/blob/master/README.md"
+}
