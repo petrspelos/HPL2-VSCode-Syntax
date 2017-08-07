@@ -1837,5 +1837,125 @@
          "GetEnemyStateName(\"${1:asName}\");"
       ],
       "description":""
+   },
+   "CheckPointCallback":{  
+      "prefix":"CheckPoint_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string name, int count)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your CheckPoint function."
+   },
+   "AddTimerCallback":{  
+      "prefix":"AddTimer_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string timer)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your AddTimer function."
+   },
+   "SetEffectVoiceOverCallback_CALLBACK":{  
+      "prefix":"SetEffectVoiceOverCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}()",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your SetEffectVoiceOverCallback function."
+   },
+   "AddCombineCallback_CALLBACK":{  
+      "prefix":"AddCombineCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string itemA, string itemB)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your AddCombineCallback function."
+   },
+   "AddUseItemCallback_CALLBACK":{  
+      "prefix":"AddUseItemCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string item, string entity)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your AddUseItemCallback function."
+   },
+    "SetEntityPlayerLookAtCallback_CALLBACK":{  
+      "prefix":"SetEntityPlayerLookAtCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string entity, int state)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your SetEntityPlayerLookAtCallback function. state = 1: looking, -1 not looking."
+   },
+    "SetEntityPlayerInteractCallback_CALLBACK":{  
+      "prefix":"SetEntityPlayerInteractCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string entity)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your SetEntityPlayerInteractCallback function."
+   },
+    "SetEntityCallbackFunc_CALLBACK":{  
+      "prefix":"SetEntityCallbackFunc_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string entity, string type)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your SetEntityCallbackFunc function."
+   },
+    "AddEntityCollideCallback_CALLBACK":{  
+      "prefix":"AddEntityCollideCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string parent, string child, int state)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your AddEntityCollideCallback function."
+   },
+    "PlayPropAnimation_CALLBACK":{  
+      "prefix":"PlayPropAnimation_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string prop)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your PlayPropAnimation function."
+   },
+    "ConnectEntities_CALLBACK":{  
+      "prefix":"ConnectEntities_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string connectionName, string mainEntity, string connectEntity, int state)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your ConnectEntities function."
+   },
+    "SetMultiSliderCallback_CALLBACK":{  
+      "prefix":"SetMultiSliderCallback_CALLBACK",
+      "body":[  
+         "void ${1:asName}(string entity, int state)",
+         "{",
+         "$0",
+         "}"
+      ],
+      "description":"A callback function of your SetMultiSliderCallback function."
    }
 }
