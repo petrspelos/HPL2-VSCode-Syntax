@@ -1,0 +1,62 @@
+{
+	"CATEGORY NEW": {
+		"prefix": "Category_TEMPLATE",
+		"body": [
+			"<CATEGORY Name=\"${1:CategoryName}\">",
+			"\t$0",
+			"</CATEGORY>"
+		],
+		"description": "Creates a new Category with a name attribute."
+	},
+	"ENTRY NEW": {
+		"prefix": "Entry_TEMPLATE",
+		"body": [
+			"<Entry Name=\"${1:EntryName}\">$0</Entry>"
+		],
+		"description": "Creates a new Entry with a name attribute."
+	},
+	"CUSTOMSTORYDESCRIPTION": {
+		"prefix": "Description_TEMPLATE",
+		"body": [
+			"<CATEGORY Name=\"CustomStoryMain\">",
+			"\t<Entry Name=\"Description\">${1:DescriptonOfYourCustomStory}</Entry>",
+			"</CATEGORY>"
+		],
+		"description": "Creates a description of a custom story."
+	},
+	"Note": {
+		"prefix": "Note_TEMPLATE",
+		"body": [
+			"<Entry Name=\"Note_${1:NoteID}_Name\">${2:NoteTitle}</Entry>",
+			"<Entry Name=\"Note_${1:NoteID}_Text\">${3:NoteText}</Entry>",
+			"$0"
+		],
+		"description": "Note template. Should be in a 'Journal' CATEGORY."
+	},
+	"Diary": {
+		"prefix": "Diary_TEMPLATE",
+		"body": [
+			"<Entry Name=\"Diary_${1:NoteID}_Name${2:NumberOfDiaryPart eg. 1}\">${3:DiaryTitle}</Entry>",
+			"<Entry Name=\"Diary_${1:NoteID}_Text${2:NumberOfDiaryPart eg. 1}\">${4:DiaryText}</Entry>",
+			"$0"
+		],
+		"description": "Diary template. Should be in a 'Journal' CATEGORY."
+	},
+	"Quest": {
+		"prefix": "Quest_TEMPLATE",
+		"body": [
+			"<Entry Name=\"Quest_${1:QuestID}_Text\">${3:QuestText}</Entry>",
+			"$0"
+		],
+		"description": "Quest/Memento template. Should be in a 'Journal' CATEGORY."
+	},
+	"Item": {
+		"prefix": "Item_TEMPLATE",
+		"body": [
+			"<Entry Name=\"ItemName_${1:ItemID}\">${2:ItemName}</Entry>",
+			"<Entry Name=\"ItemDesc_${1:ItemID}\">${3:ItemDescription}</Entry>",
+			"$0"
+		],
+		"description": "Item template. Should be in an 'Inventory' CATEGORY."
+	}
+}
