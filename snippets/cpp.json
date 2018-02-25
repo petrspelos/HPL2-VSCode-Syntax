@@ -133,7 +133,7 @@
    "MathAtan2":{  
       "prefix":"MathAtan2(float afX, float afY);",
       "body":[  
-         "MathAtan2(${1:float_afX}, ${2:float_af});"
+         "MathAtan2(${1:float_afX}, ${2:float_afY});"
       ],
       "description":""
    },
@@ -147,28 +147,28 @@
    "MathPow":{  
       "prefix":"MathPow(float afBase, float afExp);",
       "body":[  
-         "MathPow(${1:float_afBase}, ${2:float_afEx});"
+         "MathPow(${1:float_afBase}, ${2:float_afExp});"
       ],
       "description":""
    },
    "MathMin":{  
       "prefix":"MathMin(float afA, float afB);",
       "body":[  
-         "MathMin(${1:float_afA}, ${2:float_af});"
+         "MathMin(${1:float_afA}, ${2:float_afB});"
       ],
       "description":""
    },
    "MathMax":{  
       "prefix":"MathMax(float afA, float afB);",
       "body":[  
-         "MathMax(${1:float_afA}, ${2:float_af});"
+         "MathMax(${1:float_afA}, ${2:float_afB});"
       ],
       "description":""
    },
    "MathClamp":{  
       "prefix":"MathClamp(float afX, float afMin, float afMax);",
       "body":[  
-         "MathClamp(${1:float_afX}, ${2:float_afMi}, ${3:float_afMa});"
+         "MathClamp(${1:float_afX}, ${2:float_afMin}, ${3:float_afMax});"
       ],
       "description":""
    },
@@ -189,7 +189,7 @@
    "AddDebugMessage":{  
       "prefix":"AddDebugMessage(string& asString, bool abCheckForDuplicates);",
       "body":[  
-         "AddDebugMessage(\"${1:asString}\", ${2:bool_abCheckForDuplicate});"
+         "AddDebugMessage(\"${1:asString}\", ${2:bool_abCheckForDuplicates});"
       ],
       "description":""
    },
@@ -210,14 +210,14 @@
    "SetLocalVarInt":{  
       "prefix":"SetLocalVarInt(string& asName, int alVal);",
       "body":[  
-         "SetLocalVarInt(\"${1:asName}\", ${2:int_alVa});"
+         "SetLocalVarInt(\"${1:asName}\", ${2:int_alVal});"
       ],
       "description":""
    },
    "AddLocalVarInt":{  
       "prefix":"AddLocalVarInt(string& asName, int alVal);",
       "body":[  
-         "AddLocalVarInt(\"${1:asName}\", ${2:int_alVa});"
+         "AddLocalVarInt(\"${1:asName}\", ${2:int_alVal});"
       ],
       "description":""
    },
@@ -231,14 +231,14 @@
    "SetLocalVarFloat":{  
       "prefix":"SetLocalVarFloat(string& asName, float afVal);",
       "body":[  
-         "SetLocalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+         "SetLocalVarFloat(\"${1:asName}\", ${2:float_afVal});"
       ],
       "description":""
    },
    "AddLocalVarFloat":{  
       "prefix":"AddLocalVarFloat(string& asName, float afVal);",
       "body":[  
-         "AddLocalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+         "AddLocalVarFloat(\"${1:asName}\", ${2:float_afVal});"
       ],
       "description":""
    },
@@ -252,14 +252,14 @@
    "SetLocalVarString":{  
       "prefix":"SetLocalVarString(string& asName, const string& asVal);",
       "body":[  
-         "SetLocalVarString(\"${1:asName}\", \"${2:asVa}\");"
+         "SetLocalVarString(\"${1:asName}\", \"${2:asVal}\");"
       ],
       "description":""
    },
    "AddLocalVarString":{  
       "prefix":"AddLocalVarString(string& asName, string& asVal);",
       "body":[  
-         "AddLocalVarString(\"${1:asName}\", \"${2:asVa}\");"
+         "AddLocalVarString(\"${1:asName}\", \"${2:asVal}\");"
       ],
       "description":""
    },
@@ -294,14 +294,14 @@
    "SetGlobalVarFloat":{  
       "prefix":"SetGlobalVarFloat(string& asName, float afVal);",
       "body":[  
-         "SetGlobalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+         "SetGlobalVarFloat(\"${1:asName}\", ${2:float_afVal});"
       ],
       "description":""
    },
    "AddGlobalVarFloat":{  
       "prefix":"AddGlobalVarFloat(string& asName, float afVal);",
       "body":[  
-         "AddGlobalVarFloat(\"${1:asName}\", ${2:float_afVa});"
+         "AddGlobalVarFloat(\"${1:asName}\", ${2:float_afVal});"
       ],
       "description":""
    },
@@ -315,14 +315,14 @@
    "SetGlobalVarString":{  
       "prefix":"SetGlobalVarString(string& asName, const string& asVal);",
       "body":[  
-         "SetGlobalVarString(\"${1:asName}\", \"${2:asVa}\");"
+         "SetGlobalVarString(\"${1:asName}\", \"${2:asVal}\");"
       ],
       "description":""
    },
    "AddGlobalVarString":{  
       "prefix":"AddGlobalVarString(string& asName, string& asVal);",
       "body":[  
-         "AddGlobalVarString(\"${1:asName}\", \"${2:asVa}\");"
+         "AddGlobalVarString(\"${1:asName}\", \"${2:asVal}\");"
       ],
       "description":""
    },
@@ -343,14 +343,14 @@
    "CreateParticleSystemAtEntity":{  
       "prefix":"CreateParticleSystemAtEntity(string& asPSName, string& asPSFile, string& asEntity, bool abSavePS);",
       "body":[  
-         "CreateParticleSystemAtEntity(\"${1:asPSName}\", \"${2:asPSFil}\", \"${3:asEntity}\", ${4:bool_abSaveP});"
+         "CreateParticleSystemAtEntity(\"${1:asPSName}\", \"${2:asPSFil}\", \"${3:asEntity}\", ${4:bool_abSavePS});"
       ],
       "description":""
    },
    "CreateParticleSystemAtEntityExt":{  
       "prefix":"CreateParticleSystemAtEntityExt(string& asPSName, string& asPSFile, string& asEntity, bool abSavePS,float afR, float afG, float afB, float afA, bool abFadeAtDistance, float afFadeMinEnd, float afFadeMinStart,float afFadeMaxStart, float afFadeMaxEnd);",
       "body":[  
-         "CreateParticleSystemAtEntityExt(\"${1:asPSName}\", \"${2:asPSFil}\", \"${3:asEntity}\", ${4:bool_abSaveP}, ${5:float_afR}, ${6:float_afG}, ${7:float_afB}, ${8:float_afA}, ${9:bool_abFadeAtDistance}, ${10:float_afFadeMinEnd}, ${11:float_afFadeMinStart}, ${12:float_afFadeMaxStart}, ${13:float_afFadeMaxEnd});"
+         "CreateParticleSystemAtEntityExt(\"${1:asPSName}\", \"${2:asPSFil}\", \"${3:asEntity}\", ${4:bool_abSavePS}, ${5:float_afR}, ${6:float_afG}, ${7:float_afB}, ${8:float_afA}, ${9:bool_abFadeAtDistance}, ${10:float_afFadeMinEnd}, ${11:float_afFadeMinStart}, ${12:float_afFadeMaxStart}, ${13:float_afFadeMaxEnd});"
       ],
       "description":""
    },
@@ -371,7 +371,7 @@
    "PlaySoundAtEntity":{  
       "prefix":"PlaySoundAtEntity(string& asSoundName, string& asSoundFile, string& asEntity, float afFadeTime, bool abSaveSound);",
       "body":[  
-         "PlaySoundAtEntity(\"${1:asSoundName}\", \"${2:asSoundFile}\", \"${3:asEntity}\", ${4:float_afFadeTim}, ${5:bool_abSaveSoun});"
+         "PlaySoundAtEntity(\"${1:asSoundName}\", \"${2:asSoundFile}\", \"${3:asEntity}\", ${4:float_afFadeTime}, ${5:bool_abSaveSound});"
       ],
       "description":""
    },
@@ -399,21 +399,21 @@
    "StopMusic":{  
       "prefix":"StopMusic(float afFadeTime, int alPrio);",
       "body":[  
-         "StopMusic(${1:float_afFadeTime}, ${2:int_alPri});"
+         "StopMusic(${1:float_afFadeTime}, ${2:int_alPrio});"
       ],
       "description":""
    },
    "FadeGlobalSoundVolume":{  
       "prefix":"FadeGlobalSoundVolume(float afDestVolume, float afTime);",
       "body":[  
-         "FadeGlobalSoundVolume(${1:float_afDestVolume}, ${2:float_afTim});"
+         "FadeGlobalSoundVolume(${1:float_afDestVolume}, ${2:float_afTime});"
       ],
       "description":""
    },
    "FadeGlobalSoundSpeed":{  
       "prefix":"FadeGlobalSoundSpeed(float afDestSpeed, float afTime);",
       "body":[  
-         "FadeGlobalSoundSpeed(${1:float_afDestSpeed}, ${2:float_afTim});"
+         "FadeGlobalSoundSpeed(${1:float_afDestSpeed}, ${2:float_afTime});"
       ],
       "description":""
    },
@@ -518,7 +518,7 @@
    "SetSkyBoxColor":{  
       "prefix":"SetSkyBoxColor(float afR, float afG, float afB, float afA);",
       "body":[  
-         "SetSkyBoxColor(${1:float_afR}, ${2:float_af}, ${3:float_af}, ${4:float_af});"
+         "SetSkyBoxColor(${1:float_afR}, ${2:float_afG}, ${3:float_afB}, ${4:float_afA});"
       ],
       "description":""
    },
@@ -532,21 +532,21 @@
    "SetFogColor":{  
       "prefix":"SetFogColor(float afR, float afG, float afB, float afA);",
       "body":[  
-         "SetFogColor(${1:float_afR}, ${2:float_af}, ${3:float_af}, ${4:float_af});"
+         "SetFogColor(${1:float_afR}, ${2:float_afG}, ${3:float_afB}, ${4:float_afA});"
       ],
       "description":""
    },
    "SetFogProperties":{  
       "prefix":"SetFogProperties(float afStart, float afEnd, float afFalloffExp, bool abCulling);",
       "body":[  
-         "SetFogProperties(${1:float_afStart}, ${2:float_afEn}, ${3:float_afFalloffEx}, ${4:bool_abCullin});"
+         "SetFogProperties(${1:float_afStart}, ${2:float_afEnd}, ${3:float_afFalloffExp}, ${4:bool_abCulling});"
       ],
       "description":""
    },
    "SetupLoadScreen":{  
       "prefix":"SetupLoadScreen(string&asTextCat, string&asTextEntry, int alRandomNum, string&asImageFile);",
       "body":[  
-         "SetupLoadScreen(\"${1:TextCat}\", \"${2:TextEntr}\", ${3:int_alRandomNu}, \"${4:ImageFil}\");"
+         "SetupLoadScreen(\"${1:TextCat}\", \"${2:TextEntry}\", ${3:int_alRandomNum}, \"${4:ImageFile}\");"
       ],
       "description":""
    },
@@ -588,21 +588,21 @@
    "FadeImageTrailTo":{  
       "prefix":"FadeImageTrailTo(float afAmount, float afSpeed);",
       "body":[  
-         "FadeImageTrailTo(${1:float_afAmount}, ${2:float_afSpee});"
+         "FadeImageTrailTo(${1:float_afAmount}, ${2:float_afSpeed});"
       ],
       "description":""
    },
    "FadeSepiaColorTo":{  
       "prefix":"FadeSepiaColorTo(float afAmount, float afSpeed);",
       "body":[  
-         "FadeSepiaColorTo(${1:float_afAmount}, ${2:float_afSpee});"
+         "FadeSepiaColorTo(${1:float_afAmount}, ${2:float_afSpeed});"
       ],
       "description":""
    },
    "FadeRadialBlurTo":{  
       "prefix":"FadeRadialBlurTo(float afSize, float afSpeed);",
       "body":[  
-         "FadeRadialBlurTo(${1:float_afSize}, ${2:float_afSpee});"
+         "FadeRadialBlurTo(${1:float_afSize}, ${2:float_afSpeed});"
       ],
       "description":""
    },
@@ -616,7 +616,7 @@
    "StartEffectFlash":{  
       "prefix":"StartEffectFlash(float afFadeIn, float afWhite, float afFadeOut);",
       "body":[  
-         "StartEffectFlash(${1:float_afFadeIn}, ${2:float_afWhit}, ${3:float_afFadeOu});"
+         "StartEffectFlash(${1:float_afFadeIn}, ${2:float_afWhite}, ${3:float_afFadeOut});"
       ],
       "description":""
    },
@@ -686,7 +686,7 @@
    "StartScreenShake":{  
       "prefix":"StartScreenShake(float afAmount, float afTime, float afFadeInTime, float afFadeOutTime);",
       "body":[  
-         "StartScreenShake(${1:float_afAmount}, ${2:float_afTim}, ${3:float_afFadeInTim}, ${4:float_afFadeOutTim});"
+         "StartScreenShake(${1:float_afAmount}, ${2:float_afTime}, ${3:float_afFadeInTime}, ${4:float_afFadeOutTime});"
       ],
       "description":""
    },
@@ -756,7 +756,7 @@
    "AddPlayerBodyForce":{  
       "prefix":"AddPlayerBodyForce(float afX, float afY, float afZ, bool abUseLocalCoords);",
       "body":[  
-         "AddPlayerBodyForce(${1:float_afX}, ${2:float_af}, ${3:float_af}, ${4:bool_abUseLocalCoord});"
+         "AddPlayerBodyForce(${1:float_afX}, ${2:float_afY}, ${3:float_afZ}, ${4:bool_abUseLocalCoords});"
       ],
       "description":""
    },
@@ -868,7 +868,7 @@
    "GiveSanityDamage":{  
       "prefix":"GiveSanityDamage(float afAmount, bool abUseEffect);",
       "body":[  
-         "GiveSanityDamage(${1:float_afAmount}, ${2:bool_abUseEffec});"
+         "GiveSanityDamage(${1:float_afAmount}, ${2:bool_abUseEffect});"
       ],
       "description":""
    },
@@ -882,28 +882,28 @@
    "FadePlayerFOVMulTo":{  
       "prefix":"FadePlayerFOVMulTo(float afX, float afSpeed);",
       "body":[  
-         "FadePlayerFOVMulTo(${1:float_afX}, ${2:float_afSpee});"
+         "FadePlayerFOVMulTo(${1:float_afX}, ${2:float_afSpeed});"
       ],
       "description":""
    },
    "FadePlayerAspectMulTo":{  
       "prefix":"FadePlayerAspectMulTo(float afX, float afSpeed);",
       "body":[  
-         "FadePlayerAspectMulTo(${1:float_afX}, ${2:float_afSpee});"
+         "FadePlayerAspectMulTo(${1:float_afX}, ${2:float_afSpeed});"
       ],
       "description":""
    },
    "FadePlayerRollTo":{  
       "prefix":"FadePlayerRollTo(float afX, float afSpeedMul, float afMaxSpeed);",
       "body":[  
-         "FadePlayerRollTo(${1:float_afX}, ${2:float_afSpeedMu}, ${3:float_afMaxSpee});"
+         "FadePlayerRollTo(${1:float_afX}, ${2:float_afSpeedMul}, ${3:float_afMaxSpeed});"
       ],
       "description":""
    },
    "MovePlayerHeadPos":{  
       "prefix":"MovePlayerHeadPos(float afX, float afY, float afZ, float afSpeed, float afSlowDownDist);",
       "body":[  
-         "MovePlayerHeadPos(${1:float_afX}, ${2:float_af}, ${3:float_af}, ${4:float_afSpee}, ${5:float_afSlowDownDis});"
+         "MovePlayerHeadPos(${1:float_afX}, ${2:float_afY}, ${3:float_afZ}, ${4:float_afSpeed}, ${5:float_afSlowDownDist});"
       ],
       "description":""
    },
@@ -973,7 +973,7 @@
    "SetLanternActive":{  
       "prefix":"SetLanternActive(bool abX, bool abUseEffects);",
       "body":[  
-         "SetLanternActive(${1:bool_abX}, ${2:bool_abUseEffect});"
+         "SetLanternActive(${1:bool_abX}, ${2:bool_abUseEffects});"
       ],
       "description":""
    },
@@ -1036,7 +1036,7 @@
    "SetPlayerPos":{  
       "prefix":"SetPlayerPos(float afX, float afY, float afZ);",
       "body":[  
-         "SetPlayerPos(${1:float_afX}, ${2:float_af}, ${3:float_af});"
+         "SetPlayerPos(${1:float_afX}, ${2:float_afY}, ${3:float_afZ});"
       ],
       "description":""
    },
@@ -1197,7 +1197,7 @@
    "AddCombineCallback":{  
       "prefix":"AddCombineCallback(string& asName, string& asItemA, string& asItemB, string& asFunction, bool abAutoRemove);",
       "body":[  
-         "AddCombineCallback(\"${1:asName}\", \"${2:asItem}\", \"${3:asItem}\", \"${4:asFunction}\", ${5:bool_abAutoRemove});"
+         "AddCombineCallback(\"${1:asName}\", \"${2:asItemA}\", \"${3:asItemB}\", \"${4:asFunction}\", ${5:bool_abAutoRemove});"
       ],
       "description":""
    },
@@ -1477,7 +1477,7 @@
    "AddPropForce":{  
       "prefix":"AddPropForce(string& asName, float afX, float afY, float afZ, string& asCoordSystem);",
       "body":[  
-         "AddPropForce(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ}, \"${5:asCoordSyste}\");"
+         "AddPropForce(\"${1:asName}\", ${2:float_afX}, ${3:float_afY}, ${4:float_afZ}, \"${5:asCoordSystem}\");"
       ],
       "description":""
    },
